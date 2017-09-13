@@ -1,0 +1,15 @@
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_PartialAppManifest.items
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/optimized/
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/ListViewDemo.iOS.pdb
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/ListViewDemo.iOS.exe
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/ListViewDemo.iOS.exe
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/obj/iPhoneSimulator/Debug/ListViewDemo.iOS.pdb
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/ListViewDemo.dll
+/Users/vksuman/Projects/Xamarin/ListViewDemo/iOS/bin/iPhoneSimulator/Debug/ListViewDemo.pdb
