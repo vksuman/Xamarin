@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ListViewDemo.IntractiveListView" xmlns:local="clr-namespace:ListViewDemo;assembly=ListViewDemo">
 	<ContentPage.Content>
-		<ListView ItemsSource="{x:Static local:IntractiveListView.items}" ItemSelected="OnSelection" ItemTapped="OnTap" IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
+		<ListView x:Name="listdemo" ItemSelected="OnSelection" IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
@@ -13,7 +13,7 @@
 							<MenuItem Clicked="OnDelete" Text="Delete" IsDestructive="true" CommandParameter="{Binding .}" />
 						</ViewCell.ContextActions>
 						<StackLayout Padding="15,0">
-							<Label Text="{Binding .}" />
+							<Label Text="{Binding Name}" />
 						</StackLayout>
 					</ViewCell>
 				</DataTemplate>

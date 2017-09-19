@@ -1,11 +1,20 @@
 ﻿<Properties StartupConfiguration="{18150915-7A5F-4AC7-B435-12B20835EEFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ListViewDemo/ListViewDemoPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ListViewDemo Status">
     <Files>
-      <File FileName="ListViewDemo/App.xaml.cs" Line="11" Column="58" />
-      <File FileName="ListViewDemo/ListViewDemoPage.xaml" Line="6" Column="1" />
+      <File FileName="ListViewDemo/App.xaml.cs" Line="20" Column="92" />
+      <File FileName="ListViewDemo/ListViewDemoPage.xaml" Line="1" Column="1" />
       <File FileName="ListViewDemo/ListViewDemoPage.xaml.cs" Line="14" Column="4" />
-      <File FileName="ListViewDemo/IntractiveListView.xaml" Line="24" Column="1" />
-      <File FileName="ListViewDemo/IntractiveListView.xaml.cs" Line="62" Column="1" />
+      <File FileName="ListViewDemo/IntractiveListView.xaml" Line="18" Column="17" />
+      <File FileName="ListViewDemo/IntractiveListView.xaml.cs" Line="37" Column="3" />
+      <File FileName="ListViewDemo/ItemPage.xaml" Line="4" Column="27" />
+      <File FileName="ListViewDemo/ItemPage.xaml.cs" Line="14" Column="4" />
+      <File FileName="ListViewDemo/App.xaml" Line="6" Column="40" />
+      <File FileName="ListViewDemo/Instruments.cs" Line="14" Column="8" />
+      <File FileName="ListViewDemo/FileNameConverter.cs" Line="9" Column="94" />
+      <File FileName="ListViewDemo/MediaInterface.cs" Line="8" Column="44" />
+      <File FileName="iOS/MediaInterface.cs" Line="41" Column="1" />
+      <File FileName="ListViewDemo/SitesDatabase.cs" Line="1" Column="1" />
+      <File FileName="ListViewDemo Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,6 +22,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ListViewDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7BDFB31E-F7B6-46F7-9757-77541C8FC32C" />
+  <MonoDevelop.Ide.ItemProperties.ListViewDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A74C3368-027F-4C1A-AC10-D6B892FA28EC" />
   <MultiItemStartupConfigurations />
 </Properties>

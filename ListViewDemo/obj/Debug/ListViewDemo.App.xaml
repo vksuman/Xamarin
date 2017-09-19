@@ -2,5 +2,11 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ListViewDemo.App">
 	<Application.Resources>
 		<!-- Application resource dictionary -->
+		<ResourceDictionary>
+			<Style x:Key="LabelStylePuprpleSmall" TargetType="Label">
+				<Setter Property="FontSize" Value="10" />
+				<Setter Property="TextColor" Value="#59547D" />
+			</Style>
+		</ResourceDictionary>
 	</Application.Resources>
 </Application>

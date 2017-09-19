@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ListViewDemo
 {
 	public partial class IntractiveListView : ContentPage
 	{
-		public static ObservableCollection<string> items { get; set; }
 		public IntractiveListView()
 		{
-			items = new ObservableCollection<string>() { "speaker", "pen", "lamp", "monitor", "bag", "book", "cap", "tote", "floss", "phone" };
 			InitializeComponent();
 		}
 
@@ -21,30 +19,21 @@ namespace ListViewDemo
 			{
 				return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
 			}
-			DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+			//DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+			Navigation.PushAsync(new ItemPage(((Instruments)e.SelectedItem).Name));
 			//comment out if you want to keep selections
 			ListView lst = (ListView)sender;
 			lst.SelectedItem = null;
 		}
 
-		void OnRefresh(object sender, EventArgs e)
+		async void OnRefresh(object sender, EventArgs e)
 		{
 			var list = (ListView)sender;
-			//put your refreshing logic here
-			var itemList = items.Reverse().ToList();
-			items.Clear();
-			foreach (var s in itemList)
-			{
-				items.Add(s);
-			}
+			list.ItemsSource = await App.Database.GetInstrumentsAsync();
 			//make sure to end the refresh state
 			list.IsRefreshing = false;
 		}
 
-		void OnTap(object sender, ItemTappedEventArgs e)
-		{
-			DisplayAlert("Item Tapped", e.Item.ToString(), "Ok");
-		}
 
 		void OnMore(object sender, EventArgs e)
 		{
@@ -55,7 +44,33 @@ namespace ListViewDemo
 		void OnDelete(object sender, EventArgs e)
 		{
 			var item = (MenuItem)sender;
-			items.Remove(item.CommandParameter.ToString());
+		}
+		async Task<ScrollView> MyGrid()
+		{
+			StackLayout stackall = new StackLayout() { Padding = new Thickness(5, 5, 5, 5), Orientation = StackOrientation.Horizontal };
+			var instruments = await App.Database.GetInstrumentsAsync();
+			foreach (var rec in instruments)
+			{
+				Grid grid = new Grid();
+				Image image = new Image();
+				image.BindingContext = rec;
+				image.SetBinding(Image.SourceProperty, new Binding("Name", BindingMode.Default, new FileNameConverter(), null));
+				grid.Children.Add(image);
+				stackall.Children.Add(grid);
+			}
+
+			var scrollView = new ScrollView
+			{
+				Content = stackall,
+				Orientation = ScrollOrientation.Horizontal
+			};
+			return scrollView;
+		}
+		protected override async void OnAppearing()
+		{
+			base.OnAppearing();
+			listdemo.ItemsSource = await App.Database.GetInstrumentsAsync();
+			listdemo.Footer = await MyGrid();
 		}
 	}
 }
